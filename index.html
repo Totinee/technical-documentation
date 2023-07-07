@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main id="main-doc">
+        <nav id="navbar">
+            <header>C++ Documentation</header>
+            <a href="#what_is_c++" class="nav-link">What is C++</a>
+            <a href="#c++_syntax" class="nav-link">C++ Syntax</a>
+            <a href="#example_explained" class="nav-link">Example explained</a>
+            <a href="#C++_variables" class="nav-link">C++ Variables</a>
+            <a href="#creating_a_simple_calculator" class="nav-link">Creating a simple calculator</a>
+            <a href="#reference" class="nav-link">Reference</a>
+        </nav>
+        <section class="main-section" id="what_is_c++">
+            <header>What is C++</header>
+            <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+            <p>C++ gives programmers a high level of control over system resources and memory.</p>
+            <header>Why use C++</header>
+            <p>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</p>
+            <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+            <p>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+        </section>
+        <section class="main-section" id="c++_syntax">
+            <header>C++ Syntax</header>
+            <p>myfirstprogram.cpp</p>
+            <code class="full">
+                #include <<span>iostream</span>><br>
+                    using namespace std;<br><br>
+                    
+                    int main() {<br>
+                      cout << "Hello World!";<br>
+                      return 0;<br>
+                    }
+            </code>
+            <p>Try it yourself..</p>
+        </section>
+        <section class="main-section" id="example_explained">
+            <header>Example explained</header>
+            <li><b>Line 1:</b> <code class="word">#include <<span>iostream</span>></code> is a <i>header file library</i> that lets us work with input and output objects, such as <code class="word">cout</code> (used in line 5). Header files add functionality to C++ programs.</li>
+            <li><b>Line 2:</b> <code class="word">using namespace std</code> means that we can use names for objects and variables from the standard library.</li>
+            <li><b>Line 3:</b> A blank line. C++ ignores white space. But we use it to make the code more readable.</li>
+            <li><b>Line 4:</b> Another thing that always appear in a C++ program, is <code class="word">int main()</code>. This is called a <i>function</i>. Any code inside its curly brackets <code class="word">{}</code> be executed.</li>
+            <li><b>Line 5:</b> <code class="word">cout</code> is an <i>object</i> used together with the insertion operator <code class="word">(<<)</code> to output/print text. In our example it will output "Hello World!".</li> 
+            <li><b>Line 6:</b> <code class="word">return 0</code> ends the main function.</li><br>
+        </section>
+        <section class="main-section" id="C++_variables">
+            <header>C++ Variables</header>
+            <p>Variables are containers for storing data values.</p>
+            <p>In C++, there are different types of variables (defined with different keywords), for example:</p>
+            <ul>
+                <li><code class="word">int</code> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                <li><code class="word">double</code> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                <li><code class="word">char</code> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                <li><code class="word">string</code> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+                <li><code class="word">bool</code> - stores values with two states: true or false</li>
+            </ul>
+        </section>
+        <section class="main-section" id="creating_a_simple_calculator">
+            <header>Creating a Simple Calculator</header>
+            <p>In this example, the user must input two numbers. Then we print the sum by calculating (adding) the two numbers:</p>
+            <p>Example</p>
+            <code class="full">
+                int x, y;<br>
+                int sum;<br>
+                cout << "Type a number: ";<br>
+                cin >> x;<br>
+                cout << "Type another number: ";<br>
+                cin >> y;<br>
+                sum = x + y;<br>
+                cout << "Sum is: " << sum;</code>
+        </section>
+        <section class="main-section" id="reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/cpp/" target="_blank">w3schools</a></p>
+        </section>
+   </main>
+</body>
+</html>
